@@ -1,0 +1,7 @@
+- hosts:  demo
+  gather_facts: false
+    
+  tasks:
+    - name: Run sample action
+      cidrblock.http_api.go:
+
