@@ -1,4 +1,9 @@
 ```
+
+# the vault command was
+# ansible-vault encrypt_string --vault-password-file password_file 'password'
+
+
 pip install q
 
 ansible-playbook site.yaml -i inventory.yaml --vault-password-file=password_file -vvvv
