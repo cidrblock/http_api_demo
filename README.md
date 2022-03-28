@@ -1,7 +1,6 @@
 ```
 pip install q
 
-echo password > password_file
 ansible-playbook site.yaml -i inventory.yaml --vault-password-file=password_file -vvvv
 
 <demo> 
@@ -12,4 +11,11 @@ ok: [demo] => {
     "password": "password",
     "username": "brad"
 }
+
+
+
+$ tail /tmp/q
+
+ 0.0s login: username='brad', password='password'
+
 ```
